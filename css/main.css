@@ -49,11 +49,19 @@ i {
     background-size: cover;
     height: 100vh;
 }
+.second {
+    background-color: #444;
+    background-image: none;
+    height: auto;
+   
+  
+}
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
- height: 85px;
+    height: 85px;
+   
 }
 .header .container .logo {
     height: 85px;
@@ -194,6 +202,7 @@ i {
     }
   
 }
+
 @media (max-width: 991px) {
  
     .header .menu:hover + .nav-icon .nav ,
@@ -520,6 +529,7 @@ margin-left: 45px;
 }
 .location .container img{
  width: 100%;
+ vertical-align: bottom;
 }
 .location .text h3 {
 
@@ -808,4 +818,165 @@ display: flex;
     background-color: #444;
     border-radius: 50%;
     margin-right: 10px;
+    transition: .3s;
+}
+.end-footer i:nth-child(2):hover
+ {
+    background-color: #00ACED;
+    color: #fff;
+}
+.end-footer i:nth-child(1):hover
+ {
+    background-color: #3B5998;
+    color: #fff;
+}
+.end-footer i:nth-child(3):hover
+ {
+    background-color: #007BB5;
+    color: #fff;
+}
+.end-footer i:nth-child(4):hover
+ {
+    background-color: #DD4B39;
+    color: #fff;
+}
+
+/* 
+
+About
+
+*/
+
+.land-about {
+    background-image: url(../images/Screenshot\ 2022-08-14\ 175953.png);
+    height: 180px;
+    /* background-attachment: fixed; */
+}
+.land-about .container {
+
+}
+.land-about .container .ttx {
+text-align: center;
+padding-top: 50px;
+color: #FFf;
+}
+.land-about .container .ttx h2 {
+    font-size: 50px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.land-about .container .ttx p {
+    font-size: 18px;
+
+}
+.our-story {
+    padding: 50px 0;
+}
+.our-story .container{
+display: flex;
+}
+
+.our-story .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.our-story h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: normal;
+}
+.our-story .text p{
+   
+    line-height: 1.8;
+    color: #666;
+}
+.our-story .text p:nth-of-type(1) {
+    position: relative;
+}
+.our-story .text p:nth-of-type(1)::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    /* top: 5px; */
+    background-color: #999;
+    height: 1px;
+    left: 0;
+    bottom: -23px;
+}
+.our-story .img{
+width: 50%;
+margin-right: 40px;
+}
+.our-story img{
+width: 100%;
+
+}
+@media (max-width:767px) {
+    .our-story .container{
+        display: flex;
+        flex-direction: column;
+        }
+        .our-story .text{
+            width: 100%;
+            }
+            .our-story .img{
+                width: 100%;
+                margin-bottom: 50px;
+                }
+                .our-story img{
+                width: 100%;
+                
+                }
+
+}
+
+.why-bakery-about {
+padding: 50px 0;
+background-color: #eee;
+}
+.why-bakery-about .container {
+
+}
+.why-bakery-about .componetn {
+margin-bottom: 50px;
+text-align: center;
+}
+.why-bakery-about .componetn i {
+    color: var(--main-color);
+    font-size: 33px;
+    padding-bottom: 35px;
+}
+.why-bakery-about .componetn h3 {
+    font-size: 33px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.why-bakery-about .componetn p {
+    font-size: 18px;
+    color: #777;
+}
+.why-bakery-about .info {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    gap: 70px 40px;
+}
+.why-bakery-about .info h3 {
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+.why-bakery-about .info p {
+    line-height: 1.6;
+    color: #666;
+}
+@media(max-width: 767px) {
+    .why-bakery-about .info {
+        display: grid;
+        grid-template-columns: repeat(1,minmax(200px,1fr));
+      
+    }
 }
