@@ -980,3 +980,45 @@ text-align: center;
       
     }
 }
+.motion {
+    padding: 60px 0;
+    
+    background-color: #8E7754;
+}
+.motion .container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.motion .line {
+    display: flex;
+    flex-direction: column;
+    color: #dfd4d4;
+}
+.motion .line i {
+  font-size: 30px;
+  padding-bottom: 30px;
+  transition: .3s;
+
+}
+.motion .line i:hover {
+ 
+color: #fff;
+
+
+}
+.motion .line span {
+   font-size: 40px;
+   padding-bottom: 20px;
+}
+.motion .line p {
+   font-size: 18px;
+}
+@media (max-width: 767px) {
+    .motion .container {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(100px,1fr));
+        gap: 50px 0;
+    }
+}
